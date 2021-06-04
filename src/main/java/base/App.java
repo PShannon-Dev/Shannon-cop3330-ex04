@@ -24,7 +24,10 @@ public class App
         System.out.print("Enter an adverb: ");
         String adverbOne = madLib.new_adverb();
 
-        System.out.printf("How is it that my %s always %s when my %s neighbor sits on the toilet %s?", nounOne, verbOne, adjectiveOne, adverbOne);
+        String output = String.format("How is it that my %s always %s when my %s neighbor sits on the toilet %s?",
+                nounOne, verbOne, adjectiveOne, adverbOne);
+
+        System.out.println(output);
     }
     public String new_Noun()
     {
